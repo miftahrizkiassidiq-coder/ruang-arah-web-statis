@@ -1,0 +1,351 @@
+/* Ruang Arah - CSS eksternal */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #29252b;
+  background: #f8f5ef;
+}
+
+.halaman {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Bagian kiri */
+.sisi-kiri {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 46%;
+  min-height: 100vh;
+  padding: 34px 46px 24px;
+  overflow: hidden;
+  color: #fff8ee;
+  background: #45324c;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+}
+
+.logo-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 31px;
+  height: 31px;
+  border-radius: 9px 9px 9px 2px;
+  color: #45324c;
+  background: #f1b783;
+  font-size: 19px;
+}
+
+.sambutan {
+  position: relative;
+  z-index: 2;
+  margin-top: 55px;
+}
+
+.label-kecil {
+  margin: 0 0 15px;
+  color: #f1b783;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.sambutan h1 {
+  margin: 0;
+  font-size: clamp(38px, 4vw, 57px);
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.sambutan h1 span {
+  color: #f1b783;
+}
+
+.deskripsi {
+  max-width: 330px;
+  margin-top: 20px;
+  color: #e1d7e2;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Ilustrasi dibuat dari bentuk CSS, tanpa gambar tambahan */
+.gambar-bentuk {
+  position: absolute;
+  right: -15px;
+  bottom: 70px;
+  width: 270px;
+  height: 220px;
+  opacity: 0.95;
+}
+
+.matahari {
+  position: absolute;
+  top: 6px;
+  right: 57px;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #f1b783;
+}
+
+.jalan {
+  position: absolute;
+  bottom: -65px;
+  border: 2px solid #f8d9b8;
+  border-radius: 50%;
+  transform: rotate(-27deg);
+}
+
+.jalan-belakang {
+  right: -20px;
+  width: 250px;
+  height: 300px;
+}
+
+.jalan-depan {
+  right: 35px;
+  width: 155px;
+  height: 270px;
+  border-color: #b9a6c1;
+}
+
+.titik {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff8ee;
+}
+
+.titik-satu {
+  top: 35px;
+  left: 20px;
+}
+
+.titik-dua {
+  top: 90px;
+  left: 62px;
+  width: 5px;
+  height: 5px;
+}
+
+.catatan-kiri {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  color: #cbbdce;
+  font-size: 9px;
+  letter-spacing: 1.6px;
+}
+
+/* Bagian formulir */
+.sisi-kanan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 54%;
+  min-height: 100vh;
+  padding: 34px 7%;
+  background: #f8f5ef;
+}
+
+.atas-form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  color: #777078;
+  font-size: 12px;
+}
+
+.atas-form a,
+.baris-password a,
+.daftar a,
+.kaki-kanan a {
+  color: #8a573d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-masuk {
+  width: 100%;
+  max-width: 390px;
+  margin: 40px auto;
+}
+
+.label-gelap {
+  color: #8a573d;
+}
+
+.form-masuk h2 {
+  margin: 0;
+  font-size: 31px;
+  letter-spacing: -1px;
+}
+
+.teks-bantu {
+  margin: 10px 0 25px;
+  color: #777078;
+  font-size: 13px;
+}
+
+.tombol-google {
+  width: 100%;
+  height: 43px;
+  border: 1px solid #d8d0c8;
+  border-radius: 6px;
+  color: #39323a;
+  background: transparent;
+  cursor: pointer;
+}
+
+.pemisah {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0;
+  color: #89818a;
+  font-size: 11px;
+}
+
+.pemisah::before,
+.pemisah::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ded7d0;
+}
+
+.form-masuk > label:not(.ingat),
+.baris-password label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.form-masuk input[type="text"],
+.form-masuk input[type="password"] {
+  width: 100%;
+  height: 43px;
+  margin-bottom: 19px;
+  padding: 0 12px;
+  border: 1px solid #d8d0c8;
+  border-radius: 6px;
+  outline-color: #a36c4c;
+  background: #fffdfa;
+  font-size: 12px;
+}
+
+.baris-password {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.baris-password a {
+  font-size: 11px;
+}
+
+.ingat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: -3px 0 20px;
+  color: #5f5860;
+  font-size: 12px;
+}
+
+.tombol-masuk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  background: #8a573d;
+  cursor: pointer;
+}
+
+.tombol-masuk:hover {
+  background: #70442f;
+}
+
+.tombol-masuk span {
+  font-size: 18px;
+}
+
+.daftar {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.kaki-kanan {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #8c858b;
+  font-size: 10px;
+}
+
+/* Tampilan untuk layar ponsel */
+@media (max-width: 760px) {
+  .halaman {
+    flex-direction: column;
+  }
+
+  .sisi-kiri,
+  .sisi-kanan {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .sisi-kiri {
+    padding: 25px;
+  }
+
+  .sambutan {
+    margin: 48px 0 60px;
+  }
+
+  .sambutan h1 {
+    font-size: 42px;
+  }
+
+  .gambar-bentuk {
+    right: -70px;
+    bottom: 20px;
+    transform: scale(0.65);
+    transform-origin: bottom right;
+  }
+
+  .catatan-kiri {
+    display: none;
+  }
+
+  .sisi-kanan {
+    padding: 25px;
+  }
+
+  .form-masuk {
+    margin: 40px auto;
+  }
+}
